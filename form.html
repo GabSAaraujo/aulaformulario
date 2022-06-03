@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <body>
+        <form method="POST" action="" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Contato</legend><br>
+                <div>
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" placeholder="José" />
+                  </div>
+                  <div>
+                      <label for="email">E-mail:</label>
+                      <input type="email" name="email" required placeholder="jose@jose.com.br"/> <br/>
+                  </div>
+                  <div>
+                    <input type="radio" name="sexo" value="masc" />
+                    <label for="sexo">Masculino</label>
+                    <input type="radio" name="sexo" value="fem" />
+                    <label for="sexo">Feminino</label><br>
+                  </div>
+                  <div>
+                      <label for="cep">Estado/Cidade</label>
+                      <select name="cep" id="estado" required>
+                        <option></option>
+                        <option value="1">sp</option>
+                        <option value="2">mg</option>
+                        <option value="3">rg</option>
+                      </select>
+                      <input type="text" name="cep" id="cidade"><br>
+                      <div>
+                        <label for="arquivo">Selecione um Arquivo:</label>
+                        <input type="file" name="arquivo[]" multiple /><br />
+                      </div>
+                      <label for="sugestao">Sugestão:</label><br>
+                      <textarea ></textarea><br>
+                      <button type="submit"><img src="./img/entrega-rapida.png"></button>
+                      
+
+                  </div>
+
+            </fieldset>
+        </form>
+    </body>
+    
+</body>
+</html>
